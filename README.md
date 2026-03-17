@@ -23,7 +23,7 @@ O objetivo deste projeto foi praticar a autonomia no desenvolvimento, utilizando
 ## 🚀 Como visualizar
 
 Você pode visualizar o projeto online através do link abaixo:
-👉 [Link para o meu portfólio no GitHub Pages](https://alamohf.github.io/meu-portfolio/)
+👉 [Link para o meu portfólio no GitHub Pages](https://alamohf.github.io/portfolio/)
 
 ## 📝 Aprendizados
 

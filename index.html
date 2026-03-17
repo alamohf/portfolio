@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álamo Henrique - Portfólio</title>
+    <style>
+        
+        :root {
+            --bg-color: #f0f2f5;
+            --card-bg: #ffffff;
+            --primary-color: #2c3e50; 
+            --accent-color: #3498db;  
+            --text-color: #333;
+            --secondary-text: #666;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        
+        .vcard {
+            background-color: var(--card-bg);
+            max-width: 500px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Sombra suave */
+            text-align: center;
+        }
+
+        
+        .foto-perfil {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; 
+            object-fit: cover;
+            border: 4px solid var(--bg-color);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin: 10px 0;
+            font-size: 1.8rem;
+        }
+
+        .subtitulo {
+            color: var(--accent-color);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+        }
+
+        section {
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 5px;
+            color: var(--primary-color);
+        }
+
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        li {
+            background: var(--bg-color);
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            color: var(--secondary-text);
+        }
+
+        
+        .links-contato {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .links-contato a {
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .links-contato a:hover {
+            color: var(--primary-color);
+        }
+
+
+        /* Estilização da Seção de Portfólio */
+        .projeto-item {
+            background: var(--bg-color); /* Um fundo leve para destacar o projeto */
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--accent-color); /* Detalhe lateral com a cor de destaque */
+        }
+
+        .projeto-item h3 {
+            margin: 0 0 5px 0;
+            font-size: 1rem;
+            color: var(--primary-color);
+        }
+
+        .projeto-item p {
+            margin: 0 0 10px 0;
+            font-size: 0.85rem;
+            color: var(--secondary-text);
+        }
+
+        .projeto-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .projeto-links a {
+            font-size: 0.8rem;
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: bold;
+            border: 1px solid var(--accent-color);
+            padding: 3px 8px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .projeto-links a:hover {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .projeto-footer {
+            display: flex;
+            align-items: center; /* Alinha verticalmente no centro */
+            justify-content: flex-start; /* Alinha tudo à esquerda */
+            gap: 15px; /* Espaço entre os botões e o texto */
+            margin-top: 10px;
+            flex-wrap: wrap; /* Caso a tela seja muito pequena (celular), ele quebra a linha suavemente */
+}        
+
+        .projeto-footer .tech-stack {
+            font-size: 0.70rem; 
+            color: #666;
+            font-style: italic; 
+            flex: 1; 
+            min-width: 200px; 
+        }
+
+        .tech-stack {
+            font-size: 0.70rem; 
+            color: #666;
+            font-style: italic; 
+            flex: 1; 
+            min-width: 200px; 
+        }
+
+        .projeto-links {
+            display: flex;
+            gap: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="vcard">
+        <header>
+            <img src="img/foto.png" alt="Sua Foto" class="foto-perfil">
+            <h1>Álamo Henrique</h1>
+            <div class="subtitulo">Software Developer | Estudante de ADS</div>
+        </header>
+
+        <section>
+            <h2>Sobre Mim</h2>
+            <p style="color: var(--secondary-text); font-size: 0.95rem;">
+                Atuando no desenvolvimento de sistemas contábeis e modernização de software. 
+                Focado em criar soluções eficientes e acessíveis.
+            </p>
+        </section>
+
+        <section id="portfolio">
+            <h2>Projetos em Destaque</h2>
+        
+            <div class="projeto-item">
+                <h3>EcosFlow</h3>
+                <p>Sistema SaaS para gestão de fluxos financeiros em escritórios de contabilidade.</p>
+                <div class="projeto-links">
+                    <a href="https://ecosflow.lovable.app/" target="_blank">Gestão Financeira</a>
+                    <a href="#" target="_blank">Ativo/produção</a>
+                </div>
+            </div>
+        
+            <div class="projeto-item">
+                <h3>Barber Connect</h3>
+                <p>Plataforma com foco em acessibilidade para atendimento de barbeiros surdos.</p>
+                <div class="projeto-links">
+                    <a href="https://github.com/alamohf/barber-connect" target="_blank">Repositório</a>
+                    <a href="https://barber-connect-lovat.vercel.app/login" target="_blank">Demo Online</a>
+                </div>
+            </div>
+
+            <div class="projeto-item">
+                <h3>EMI - online</h3>
+                <p>CRM para gestão de clientes, assinaturas, contas areceber/pagar.</p>
+                <div class="projeto-footer">
+                    <div class="projeto-links">
+                        <a href="https://emionline.lovable.app/auth" target="_blank">Ativo</a>
+                        <a href="https://emionline.lovable.app/auth" target="_blank">Online</a>
+                    </div>
+                    <span class="tech-stack">Desenvolvido com React, TypeScript e Supabase</span>
+                </div>
+            </div>
+            </section>
+
+        <section>
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>React & Node.js</li>
+                <li>Git & GitHub</li>
+                <li>SQL</li>
+                <li>n8n</li>
+            </ul>
+        </section>
+
+        <div class="links-contato">
+            <a href="https://github.com/alamohf" target="_blank">GitHub</a>
+            <a href="mailto:almaohf@gmail.com">E-mail</a>
+        </div>
+    </div>
+
+</body>
+</html>
